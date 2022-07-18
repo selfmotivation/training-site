@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+$main-text-color: #090808;
+$secondary-text-color: #828282;
+$light-text-color: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Manrope';
+  font-size: 18px;
+}
+
+.wrapper {
+  margin: 0 135px;
+}
+
+// Header
+
+.search {
+  position: relative;
+  
+  border-bottom: 1px solid #000;
+
+  &-input {
+    padding: 14px 18px;
+    width: 90%;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: $main-text-color;
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 400;
+      color: $secondary-text-color;
+    }
+  }
+
+  &::before {
+    content: url(../img/search-icon.png);
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+  }
+}
+
+.menu {
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60px;
+
+    &__item {
+      text-align: center;
+      margin-left: 50px;
+      width: 68px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      a {
+        display: block;
+      }
+
+      span {
+        display: block;
+
+        font-size: 15px;
+        color: $main-text-color;
+      }
+    }
+  }
+  
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  &__search {
+    flex-grow: 1;
+    margin: 0 55px 0 85px;
+  }
+
+  &__btn {
+    padding: 15px 75px;
+  
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    background: $main-text-color;
+    color: $light-text-color;
+  }
+
+  &__menu {
+
+  }
+}
