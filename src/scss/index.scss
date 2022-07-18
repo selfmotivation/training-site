@@ -120,6 +120,10 @@ body {
         display: block;
       }
 
+      img {
+        fill: red;
+      }
+
       span {
         display: block;
 
@@ -139,6 +143,15 @@ body {
           height: 12px;
           background: #FFCC2D;
         }
+      }
+    }
+
+    &__img {
+      width: 27px;
+      height: 27px;
+
+      &:hover {
+        fill: black;
       }
     }
   }
@@ -354,6 +367,10 @@ body {
           &::after {
             display: block;
           }
+        }
+
+        &:last-of-type .menu-list__img {
+          fill: black;
         }
       }
     }

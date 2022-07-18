@@ -92,6 +92,9 @@ body {
 .menu-list__item a {
   display: block;
 }
+.menu-list__item img {
+  fill: red;
+}
 .menu-list__item span {
   display: block;
   font-size: 15px;
@@ -106,6 +109,13 @@ body {
   width: 12px;
   height: 12px;
   background: #FFCC2D;
+}
+.menu-list__img {
+  width: 27px;
+  height: 27px;
+}
+.menu-list__img:hover {
+  fill: black;
 }
 
 .header {
@@ -264,6 +274,9 @@ body {
   }
   .menu-list__item_active::after {
     display: block;
+  }
+  .menu-list__item:last-of-type .menu-list__img {
+    fill: black;
   }
 
   .header {
